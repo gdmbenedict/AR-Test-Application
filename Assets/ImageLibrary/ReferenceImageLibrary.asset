@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5465861473295922589
+  m_GuidHigh: 16440983483019465654
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5502774076812445040
+      m_GuidHigh: 18161502063004685713
+    m_SerializedTextureGuid:
+      m_GuidLow: 15295410688629623976
+      m_GuidHigh: 11070847792901616395
+    m_Size: {x: 0.0635, y: 0.092202}
+    m_SpecifySize: 1
+    m_Name: Proto-Type Mech
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5590069697527636796
+      m_GuidHigh: 527019673694813879
+    m_SerializedTextureGuid:
+      m_GuidLow: 1248763662620018637
+      m_GuidHigh: 5768985657507606329
+    m_Size: {x: 0.0635, y: 0.092202}
+    m_SpecifySize: 1
+    m_Name: MechV1
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5357669356053825252
+      m_GuidHigh: 13805820842360207021
+    m_SerializedTextureGuid:
+      m_GuidLow: 14025432613490683594
+      m_GuidHigh: 1068241664763502936
+    m_Size: {x: 0.0635, y: 0.092202}
+    m_SpecifySize: 1
+    m_Name: Mechv2
+    m_Texture: {fileID: 0}
