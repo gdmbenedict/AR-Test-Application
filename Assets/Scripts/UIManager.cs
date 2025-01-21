@@ -9,9 +9,14 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject regularUI;
     [SerializeField] private GameObject infoUI;
 
-    [Header("Info Screen")]
-    [SerializeField] private Image infoPanel;
-    [SerializeField] private Color infoPanelColor;
+    [Header("Info Screen Elements")]
+    [SerializeField] private GameObject infoBackground;
+    [SerializeField] private CanvasGroup infoBackgroundGroup;
+
+    //info fields
+    private string nameField;
+    private string heightField;
+    private string 
 
     public void SwitchToInfo()
     {

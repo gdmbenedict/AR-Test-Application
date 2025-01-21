@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MechInfo : MonoBehaviour
+//Class to hold information about a mech
+public class MechInfo 
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject renderModel;
+    public string name;
+    public string height;
+    public string weight;
+    public string armor;
+    public string Weapons;
+    public string Description;
 }
