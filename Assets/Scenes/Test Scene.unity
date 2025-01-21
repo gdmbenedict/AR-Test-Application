@@ -237,8 +237,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3566352328326923748, guid: 2351a554693a6f246a91edcf95a0d09a,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566352328326923748, guid: 2351a554693a6f246a91edcf95a0d09a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566352328326923748, guid: 2351a554693a6f246a91edcf95a0d09a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566352328326923748, guid: 2351a554693a6f246a91edcf95a0d09a,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.086864166
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3566352328326923748, guid: 2351a554693a6f246a91edcf95a0d09a,
         type: 3}
@@ -332,7 +347,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
+  m_BackGroundColor: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -361,7 +376,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -382,7 +397,7 @@ Transform:
   m_GameObject: {fileID: 788958531}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.06, z: -0.55}
+  m_LocalPosition: {x: 0, y: 0.1, z: -0.699}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -612,6 +627,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mechv2
       objectReference: {fileID: 0}
+    - target: {fileID: 4762659641576675295, guid: 7c7b46899c7a512479caa95244cceec0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5283721927439158629, guid: 7c7b46899c7a512479caa95244cceec0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -679,6 +699,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: uploads_files_4125088_robotpj--3DView-{3D}
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724475055607155180, guid: 389a7eb46ec610c498b20467f8f0b7e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2064126655152837462, guid: 389a7eb46ec610c498b20467f8f0b7e1,
         type: 3}
