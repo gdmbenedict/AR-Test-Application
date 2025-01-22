@@ -17,7 +17,7 @@ public class RendersManager : MonoBehaviour
         }
 
         //instantiate target as new model
-        targetModel = Instantiate(targetModel, modelLocation);
+        targetModel = Instantiate(target, modelLocation);
 
         //size up model for render
         targetModel.transform.localScale *= 2;

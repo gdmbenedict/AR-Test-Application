@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.XR.ARFoundation;
 
 public class InteractionManager : MonoBehaviour
@@ -12,28 +13,40 @@ public class InteractionManager : MonoBehaviour
     [SerializeField] private RendersManager rendersManager; //manager that manages getting render textures for UI
     [SerializeField] private LayerMask mechLayer;
 
-    private void Update()
+    //controls
+    [SerializeField] private InputAction press, screenPos;
+    private Vector3 cursorScreenPos;
+
+    private void Awake()
     {
-        //check if screen has been touched
-        if (Input.touchCount > 0)
+        press.Enable();
+        screenPos.Enable();
+        screenPos.performed += context => { cursorScreenPos = context.ReadValue<Vector2>(); }; //stores the press / mouse position
+        press.performed += OnTouch;
+    }
+
+    public void OnTouch(InputAction.CallbackContext context)
+    {
+        //check that input was start of touch input
+        if (context.performed)
         {
-            Touch touch = Input.GetTouch(0);
+            //Debug.Log("Touch activated");
 
-            //check that input was start of touch input
-            if (touch.phase == TouchPhase.Began)
+            //get ray to cast
+            Ray ray = Camera.main.ScreenPointToRay(cursorScreenPos);
+
+            
+            //perform raycast
+            if (Physics.Raycast(ray, out RaycastHit hit, mechLayer))
             {
-                //get ray to cast
-                Ray ray = Camera.main.ScreenPointToRay(touch.position);
-
-                //perform raycast
-                if (Physics.Raycast(ray, out RaycastHit hit, mechLayer))
-                {
-                    mechInfo = hit.collider.GetComponent<MechInfo>();//retreiving info
-                    rendersManager.RenderModel(mechInfo.renderModel);//call setup for reder moodel of mech
-                    uiManager.UpdateInfo(mechInfo.infoFields);//update UI to display selected mech info
-                    uiManager.SwitchUI();//toggle UI to info menu
-                }
+                mechInfo = hit.collider.GetComponent<MechInfo>();//retreiving info
+                rendersManager.RenderModel(mechInfo.renderModel);//call setup for reder moodel of mech
+                uiManager.UpdateInfo(mechInfo.infoFields);//update UI to display selected mech info
+                uiManager.SwitchUI();//toggle UI to info menu
             }
+            
         }
+
     }
 }
+

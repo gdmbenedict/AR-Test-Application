@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
     [Header("Info Screen Elements")]
     [SerializeField] private CanvasGroup infoBackgroundGroup;
     [SerializeField] private Image infoBackgroundTile;
+    [SerializeField] private GameObject exitMenuButton;
 
     [Header("Info Fields")]
     [SerializeField] private GameObject frontView;
@@ -42,6 +43,7 @@ public class UIManager : MonoBehaviour
 
         //toggle state
         inInfoScreen = !inInfoScreen;
+        //Debug.Log(inInfoScreen);
 
         if (inInfoScreen)
         {
@@ -55,7 +57,10 @@ public class UIManager : MonoBehaviour
             StartCoroutine(TransitionBackground()); //transition background
 
             //wait until coroutine is done
-            while (currentStep.MoveNext());
+            while (currentStep.MoveNext()) Debug.Log("waiting");
+
+            //add exit button
+            exitMenuButton.SetActive(true);
 
             //activate the individual fields
             StartCoroutine(ActivateFields());
@@ -77,6 +82,9 @@ public class UIManager : MonoBehaviour
             {
                 infoField.SetActive(false);
             }
+
+            //remove exit button
+            exitMenuButton.SetActive(false);
 
             //transition UI backgrounds
             StartCoroutine(TransitionBackground());
@@ -107,8 +115,8 @@ public class UIManager : MonoBehaviour
         //setting initial values
         if (inInfoScreen)
         {
-            startValue = 1;
-            endValue = 0;
+            startValue = 0;
+            endValue = 1;
         }
         else
         {

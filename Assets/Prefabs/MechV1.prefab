@@ -406,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: b27afbda5c31db34a97ab7ee3ded6c81, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: b27afbda5c31db34a97ab7ee3ded6c81, type: 3}
       propertyPath: m_LocalRotation.x
@@ -414,7 +414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: b27afbda5c31db34a97ab7ee3ded6c81, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: b27afbda5c31db34a97ab7ee3ded6c81, type: 3}
       propertyPath: m_LocalRotation.z
@@ -426,7 +426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: b27afbda5c31db34a97ab7ee3ded6c81, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: b27afbda5c31db34a97ab7ee3ded6c81, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -455,5 +455,61 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100050, guid: b27afbda5c31db34a97ab7ee3ded6c81,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -93249650213757527}
+    - targetCorrespondingSourceObject: {fileID: 100050, guid: b27afbda5c31db34a97ab7ee3ded6c81,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -286450230251694794}
   m_SourcePrefab: {fileID: 100100000, guid: b27afbda5c31db34a97ab7ee3ded6c81, type: 3}
+--- !u!1 &3566352328327420292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100050, guid: b27afbda5c31db34a97ab7ee3ded6c81,
+    type: 3}
+  m_PrefabInstance: {fileID: 3566352328327323478}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-93249650213757527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566352328327420292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8367dd6d4779ff14598ec65b8692a7fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderModel: {fileID: 3566352328327420292, guid: c4e310b9fd3cedc45804f199d055dbd7,
+    type: 3}
+  infoFields:
+  - RDU-04-P2
+  - 15.5m
+  - 57.4 tons
+  - Alum-Ceramic
+  - '- Hydraulic Fist'
+  - A prototype developed early in the war of 2089. Only a few were ever deployed
+--- !u!65 &-286450230251694794
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566352328327420292}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.574318, y: 16.859394, z: 10.695047}
+  m_Center: {x: -0.067648664, y: 7.9297023, z: 0.2910856}
