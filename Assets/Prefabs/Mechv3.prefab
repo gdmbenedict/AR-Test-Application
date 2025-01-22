@@ -130,10 +130,10 @@ MonoBehaviour:
   - WF-05 "Tiger"
   - 16.2m
   - 67.8 tons
-  - Titantium Carbide
+  - Ti-Carbide
   - '- 2x 60mm cannons'
-  - Refined Design boasting better weight distribution and standard weapons. Mass
-    produced during 2089
+  - Refined Design boasting better weight distribution and weapons. Mass produced
+    during 2089
 --- !u!65 &8096475138899857391
 BoxCollider:
   m_ObjectHideFlags: 0

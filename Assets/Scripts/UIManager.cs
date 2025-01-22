@@ -99,7 +99,7 @@ public class UIManager : MonoBehaviour
         //loop through array updating information
         for (int i =0; i<infoFieldsText.Length; i++)
         {
-            infoFieldsText[i].text = infoText[i];
+            infoFieldsText[i].text = infoText[i].Replace("\\n", "\n");
         }
     }
 
