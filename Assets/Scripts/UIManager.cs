@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private GameObject regularUI;
     [SerializeField] private GameObject infoUI;
+    [SerializeField] private GameObject rendersManagerObject; //object used to enable or disable the renders manager and attached camera
 
     [Header("Transition Variables")]
     [SerializeField] private float backgroundTransitionTime;
@@ -90,6 +91,7 @@ public class UIManager : MonoBehaviour
             StartCoroutine(TransitionBackground());
 
             infoUI.SetActive(false); //de-activating info UI
+            rendersManagerObject.SetActive(true); //turning on renders and render textures
         }
     }
 
@@ -166,5 +168,10 @@ public class UIManager : MonoBehaviour
     {
         source.pitch = 1 + Random.Range(-pitchShift, pitchShift);
         source.PlayOneShot(audioClip);
+    }
+
+    public bool getInfoScreenOn()
+    {
+        return inInfoScreen;
     }
 }
